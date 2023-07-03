@@ -10,9 +10,9 @@
 		BCEF9C8E2A53219E00E0779E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF9C8D2A53219E00E0779E /* AppDelegate.swift */; };
 		BCEF9C902A53219E00E0779E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF9C8F2A53219E00E0779E /* SceneDelegate.swift */; };
 		BCEF9C922A53219E00E0779E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF9C912A53219E00E0779E /* ViewController.swift */; };
-		BCEF9C952A53219E00E0779E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEF9C932A53219E00E0779E /* Main.storyboard */; };
 		BCEF9C972A5321A000E0779E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCEF9C962A5321A000E0779E /* Assets.xcassets */; };
 		BCEF9C9A2A5321A000E0779E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCEF9C982A5321A000E0779E /* LaunchScreen.storyboard */; };
+		BCEF9CA22A5326B100E0779E /* RoundedGradientSquareWithShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEF9CA12A5326B100E0779E /* RoundedGradientSquareWithShadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +20,10 @@
 		BCEF9C8D2A53219E00E0779E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCEF9C8F2A53219E00E0779E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BCEF9C912A53219E00E0779E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BCEF9C942A53219E00E0779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCEF9C962A5321A000E0779E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCEF9C992A5321A000E0779E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCEF9C9B2A5321A000E0779E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCEF9CA12A5326B100E0779E /* RoundedGradientSquareWithShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedGradientSquareWithShadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +59,10 @@
 				BCEF9C8D2A53219E00E0779E /* AppDelegate.swift */,
 				BCEF9C8F2A53219E00E0779E /* SceneDelegate.swift */,
 				BCEF9C912A53219E00E0779E /* ViewController.swift */,
-				BCEF9C932A53219E00E0779E /* Main.storyboard */,
 				BCEF9C962A5321A000E0779E /* Assets.xcassets */,
 				BCEF9C982A5321A000E0779E /* LaunchScreen.storyboard */,
 				BCEF9C9B2A5321A000E0779E /* Info.plist */,
+				BCEF9CA12A5326B100E0779E /* RoundedGradientSquareWithShadow.swift */,
 			);
 			path = GradientAndShadow;
 			sourceTree = "<group>";
@@ -127,7 +127,6 @@
 			files = (
 				BCEF9C9A2A5321A000E0779E /* LaunchScreen.storyboard in Resources */,
 				BCEF9C972A5321A000E0779E /* Assets.xcassets in Resources */,
-				BCEF9C952A53219E00E0779E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,20 +140,13 @@
 				BCEF9C922A53219E00E0779E /* ViewController.swift in Sources */,
 				BCEF9C8E2A53219E00E0779E /* AppDelegate.swift in Sources */,
 				BCEF9C902A53219E00E0779E /* SceneDelegate.swift in Sources */,
+				BCEF9CA22A5326B100E0779E /* RoundedGradientSquareWithShadow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BCEF9C932A53219E00E0779E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BCEF9C942A53219E00E0779E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BCEF9C982A5321A000E0779E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,9 +284,7 @@
 				INFOPLIST_FILE = GradientAndShadow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,9 +310,7 @@
 				INFOPLIST_FILE = GradientAndShadow/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

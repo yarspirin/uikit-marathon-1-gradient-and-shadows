@@ -7,13 +7,35 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
+
+  private static let squareLeadingSpacing = 100.0
+  private static let squareSideLength = 120.0
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    configure()
   }
 
+  private func configure() {
+    view.backgroundColor = .white
 
+    let roundedSquare = RoundedGradientSquareWithShadow(
+      topLeftColor: .red,
+      bottomRightColor: .blue
+    )
+
+    view.addSubview(roundedSquare)
+
+    NSLayoutConstraint.activate(
+      [
+        roundedSquare.leftAnchor.constraint(
+          equalTo: view.leftAnchor,
+          constant: Self.squareLeadingSpacing
+        ),
+        roundedSquare.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+        roundedSquare.widthAnchor.constraint(equalToConstant: Self.squareSideLength),
+      ]
+    )
+  }
 }
-
